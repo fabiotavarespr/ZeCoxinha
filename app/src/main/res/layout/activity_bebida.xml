@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BebidaActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        style="@style/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/header_bebida" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar_total"
+        android:layout_below="@id/header"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="0dp"
+                    android:padding="8dp"
+                    android:text="@string/refrigerante"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/preco_refrigerante"
+                    android:textAlignment="center" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="delRefrigerante"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantidade_refrigerante"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/valor" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="addRefrigerante"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="44dp"
+                    android:padding="8dp"
+                    android:text="@string/suco"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/preco_suco"
+                    android:textAlignment="center" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="delSuco"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantidade_suco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/valor" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="addSuco"
+                    android:text="+" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="30dp"
+                    android:padding="8dp"
+                    android:text="@string/cerveja"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:padding="8dp"
+                    android:text="@string/preco_cerveja"
+                    android:textAlignment="center" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="delCerveja"
+                    android:text="-" />
+
+                <TextView
+                    android:id="@+id/quantidade_cerveja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/valor" />
+
+                <Button
+                    style="@style/button"
+                    android:onClick="addCerveja"
+                    android:text="+" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bar_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/footer"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="8dp"
+                android:text="@string/total"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/retornar"
+                style="@style/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_retornar"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:id="@+id/proximo"
+                style="@style/footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/footer_proximo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

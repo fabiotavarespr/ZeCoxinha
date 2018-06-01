@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">ZeCoxinha</string>
+    <string name="app_name">Lanchonete Zé Coxinha</string>
+    <string name="tela_inicial">Bem vindo a\n Lanchonete\n Zé Coxinha</string>
+    <string name="iniciar_pedido">Iniciar seu Pedido</string>
+
+    <string name="digite_seu_nome">Digite seu nome</string>
+
+    <string name="header_sanduiche">Escolha seu lanche</string>
+    <string name="header_acompanhamento">Escolha seu acompanhamento</string>
+    <string name="header_bebida">Escolha sua bebida</string>
+    <string name="header_forma_pagamento">Escolha a forma de pagamento</string>
+    <string name="header_pedido_sucesso">Pedido realizado com Sucesso</string>
+
+    <string name="footer_proximo">Próximo</string>
+    <string name="footer_retornar">Retornar</string>
+    <string name="footer_novo_pedido">Novo pedido</string>
+
+    <string name="total">Total R$:</string>
+
+    <string name="hamburguer">Hambúrguer</string>
+    <string name="sanduiche">Sanduíche</string>
+    <string name="cachorro_quente">Cachorro-quente</string>
+    <string name="preco_hamburguer">R$: 15</string>
+    <string name="preco_sanduiche">R$: 12</string>
+    <string name="preco_cachorro_quente">R$: 8</string>
+
+    <string name="batata_frita">Batata Frita</string>
+    <string name="batata_rustica">Batata Rústica</string>
+    <string name="batata_chips">Batata Chips</string>
+    <string name="preco_batata_frita">R$: 6</string>
+    <string name="preco_batata_rustica">R$: 8</string>
+    <string name="preco_batata_chips">R$: 5</string>
+
+    <string name="refrigerante">Refrigerante</string>
+    <string name="suco">Suco</string>
+    <string name="cerveja">Cerveja</string>
+    <string name="preco_refrigerante">R$: 3</string>
+    <string name="preco_suco">R$: 4</string>
+    <string name="preco_cerveja">R$: 6</string>
+
+    <string name="dinheiro">Dinheiro</string>
+    <string name="debito">Debito</string>
+    <string name="credito">Crédito</string>
+
 </resources>
